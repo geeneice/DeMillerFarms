@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Merriweather", serif;
+}
+.Barrio {
+  font-family: "Barrio", serif;
+}
+.Modak {
+  font-family: "Modak", serif;
+}
+.clipped {
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 17.14%,
+    2% 17.54%,
+    4% 17.76%,
+    6% 17.79%,
+    8% 17.62%,
+    10% 17.28%,
+    12% 16.77%,
+    14% 16.15%,
+    16% 15.44%,
+    18% 14.7%,
+    20% 13.99%,
+    22% 13.34%,
+    24% 12.81%,
+    26% 12.43%,
+    28% 12.23%,
+    30% 12.22%,
+    32% 12.4%,
+    34% 12.76%,
+    36% 13.28%,
+    38% 13.92%,
+    40% 14.63%,
+    42% 15.37%,
+    44% 16.08%,
+    46% 16.71%,
+    48% 17.23%,
+    50% 17.6%,
+    52% 17.78%,
+    54% 17.77%,
+    56% 17.57%,
+    58% 17.19%,
+    60% 16.66%,
+    62% 16.02%,
+    64% 15.3%,
+    66% 14.56%,
+    68% 13.86%,
+    70% 13.23%,
+    72% 12.73%,
+    74% 12.38%,
+    76% 12.21%,
+    78% 12.24%,
+    80% 12.46%,
+    82% 12.85%,
+    84% 13.4%,
+    86% 14.05%,
+    88% 14.77%,
+    90% 15.51%,
+    92% 16.21%,
+    94% 16.82%,
+    96% 17.31%,
+    98% 17.65%,
+    100% 17.79%
+  );
+}

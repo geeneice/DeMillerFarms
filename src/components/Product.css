@@ -1,0 +1,22 @@
+/* Keyframes for smooth grow, shrink, and color transition */
+@keyframes growShrinkColor {
+    0% {
+      transform: scale(1); /* Normal size */
+      color: rgb(0, 128, 0); /* Green */
+    }
+    40% {
+      transform: scale(1.5); /* Enlarged size */
+      color: rgb(255, 0, 0); /* Red */
+    }
+    100% {
+      transform: scale(1); /* Back to normal size */
+      color: rgb(255, 223, 0); /* Yellow */
+    }
+  }
+  
+  /* Smooth grow-shrink-color animation */
+  .grow-and-shrink {
+    animation: growShrinkColor 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    display: inline-block; /* Ensure animations apply to inline elements */
+  }
+  

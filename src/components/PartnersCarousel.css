@@ -1,0 +1,68 @@
+.partners-section-horizontal {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the title and content */
+  justify-content: center;
+}
+
+.section-title-horizontal {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  justify-content: center; /* Ensure horizontal centering */
+  scroll-behavior: smooth;
+  max-width: 90%; /* Adjust for responsiveness */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.logo-container-horizontal {
+  flex: 0 0 auto; /* Prevent shrinking */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 120px; /* Ensure consistent size */
+}
+
+.logo-container-horizontal:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-horizontal {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-horizontal:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
