@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../assets/DeMillerLogo.png";
-import { BiLogoFacebookSquare } from "react-icons/bi";
+import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { GrInstagram } from "react-icons/gr";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa6";
@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full h-[80%] bg-[#FFC107] text-white py-16 pt-[150px] px-8 md:px-48 flex flex-col gap-8 mt-[-4px] shadow-lg clipped relative">
+    <div className="w-full h-[80%] bg-[#F93827] text-white py-16 pt-[150px] px-8 md:px-48 flex flex-col gap-8 mt-[-4px] shadow-lg clipped relative">
       <div className="flex flex-row justify-between items-center w-full">
         <img
           src={logo}
@@ -41,11 +41,11 @@ const Footer = () => {
         </h1>
 
         <div className="flex gap-6 justify-center md:justify-start text-[24px]">
-          <BiLogoFacebookSquare className="hover:text-[#4267B2] transition-all cursor-pointer transform hover:scale-125" />
+          <FaFacebookF className="hover:text-[#4267B2] transition-all cursor-pointer transform hover:scale-125" />
           <FaXTwitter className="hover:text-black transition-all cursor-pointer transform hover:scale-125" />
           <FaLinkedinIn className="hover:text-[#0077b5] transition-all cursor-pointer transform hover:scale-125" />
           <IoLogoYoutube className="hover:text-[#FF0000] transition-all cursor-pointer transform hover:scale-125" />
-          <FaSquareInstagram className="hover:text-[#E4405F] transition-all cursor-pointer transform hover:scale-125" />
+          <GrInstagram className="hover:text-[#E4405F] transition-all cursor-pointer transform hover:scale-125" />
         </div>
       </div>
 

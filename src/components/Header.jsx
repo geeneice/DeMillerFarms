@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div
       className={`top-0 z-50 fixed w-[100%] transition-colors duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-[#FFC107]"
+        isScrolled ? "bg-white shadow-lg" : "bg-[#FF9D23]"
       }`}
     >
       <div className="relative flex items-center justify-between sm:px-8 max-sm:px-8  md:pl-10 md:pr-0 md:py-0 w-[100%]">
@@ -43,7 +43,7 @@ const Header = () => {
 
         {/* Navigation Menu */}
         <nav className=" w-[80%] py-2 ">
-          <ul className="hidden md:grid grid-cols-6 items-center gap-6 cursor-pointer font-bold text-[14px]">
+          <ul className="hidden md:grid grid-cols-6 items-center gap-6 cursor-pointer font-bold md:text-[8px] lg:text-[14px]">
             {[
               { label: "HOME", to: "/" },
               { label: "OUR COMPANY", to: "/our-company" },
@@ -100,11 +100,11 @@ const Header = () => {
           </button>
 
           {isOpen && (
-            <div className="fixed z-40 top-0 h-[100vh] left-0 bg-gradient-to-b from-[rgb(254,161,26)] to-[rgb(250,115,28)] w-full shadow-lg p-8 overflow-auto">
+            <div className="fixed z-40 top-0 h-[100vh] left-0 bg-[rgb(254,161,26)] w-full shadow-lg p-8 overflow-auto">
               <h2 className="text-white text-[20px] font-extrabold mb-6 uppercase tracking-wide">
                 Menu
               </h2>
-              <ul className="space-y-6 text-white text-[18px] font-medium">
+              <ul className="space-y-6 text-white text-[18px] font-medium ">
                 {[
                   { href: "#home", label: "Home" },
                   { href: "#ourcompany", label: "Our Company" },
@@ -113,7 +113,10 @@ const Header = () => {
                   { href: "#careers", label: "Careers" },
                   { href: "#howtobuy", label: "How To Buy" },
                 ].map((item, index) => (
-                  <li key={index} className="menu-item">
+                  <li
+                    key={index}
+                    className="menu-item border-b-[1px] border-white"
+                  >
                     <a
                       href={item.href}
                       className="hover:text-black transition duration-300 flex gap-3 items-center"
